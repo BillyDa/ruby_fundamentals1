@@ -7,6 +7,11 @@ puts "Your tip should be #{tip.to_f} dollars"
 puts "Was your service good, type Y or N"
 service = gets.chomp
 
+until service == "y" || service == "n"
+  puts "Was your service good, type Y or N"
+  service = gets.chomp
+end #service == "y" || "n"
+puts "Thank you come again"
 
 if service == "y"
   puts "Your service was good, please tip #{"$"+(tip + 5).to_s} dollars"
@@ -16,8 +21,4 @@ else
   puts "I do not understand try again"
 end
 
-
-# until service == "y" || "n"
-    # puts "Was your service good, type Y or N"
-# end while service == "y" || "n"
-# end
+# puts "What is the value of #{45628*7839}?"

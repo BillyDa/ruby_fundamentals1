@@ -21,4 +21,4 @@ else
   puts "I do not understand try again"
 end
 
-# puts "What is the value of #{45628*7839}?"
+puts "The value of 45628 x 7839 is: \n #{45628*7839}  You're welcome"

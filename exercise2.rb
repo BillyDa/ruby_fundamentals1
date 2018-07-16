@@ -2,16 +2,22 @@
 puts "Please enter cost of meal"
 meal = gets.chomp.to_f
 puts "Your meal was #{meal} dollars"
-tip = meal / 3
+tip = meal / 5
 puts "Your tip should be #{tip.to_f} dollars"
-# tip = gets.chomp
-# puts "My meal cost #{meal*0.25} in dollars"
-#
-# if tip is < 5
-#   puts "Cheapskate"
-# elsif tip is < 10
-#   puts "Saliva free food"
-# else tip is > 13
-#   puts "happy server"
-#
+puts "Was your service good, type Y or N"
+service = gets.chomp
+
+
+if service == "y"
+  puts "Your service was good, please tip #{"$"+(tip + 5).to_s} dollars"
+elsif service == "n"
+  puts "Your service was poor, #{"$"+(tip - 5).to_s} is adequate"
+else
+  puts "I do not understand try again"
+end
+
+
+# until service == "y" || "n"
+    # puts "Was your service good, type Y or N"
+# end while service == "y" || "n"
 # end

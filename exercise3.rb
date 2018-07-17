@@ -1,10 +1,10 @@
-puts "What is your name"
-user_name = gets.chomp
-puts "Hello, #{user_name}"
-puts "What is your age?"
-age = gets.chomp.to_i
-year = 2018 - age
-puts "You were born in the year #{year}!"
+# puts "What is your name"
+# user_name = gets.chomp
+# puts "Hello, #{user_name}"
+# puts "What is your age?"
+# age = gets.chomp.to_i
+# year = 2018 - age
+# puts "You were born in the year #{year}!"
 
 number = gets.to_i # the user types a number
 if number > 0
@@ -23,6 +23,15 @@ elsif x < y
 else
   puts "x equals y!"
 end
+
+if x != 10
+  puts "I get printed"
+end
+
+unless x == 10
+  puts "I get printed!"
+end
+
 
   # if age > 70
   # puts "You are old af"
